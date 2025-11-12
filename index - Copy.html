@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Age - Home</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <header>
+    <div class="logo">Coding Age</div>
+    <img src="./Coding Age1_edited_edited.avif" alt="">
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="course.html">Courses</a>
+      <a href="batch.html">Batches</a>
+      <a href="admission.html">Admission</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+      <a href="login.html" class="btn">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <video autoplay muted loop id="bg-video">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1>Welcome to Coding Age</h1>
+      <p>Learn web development, programming, and design — build your career in tech!</p>
+      <a href="courses.html" class="btn-primary">Explore Courses</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>Our Project & Mission</h2>
+    <p>
+      Coding Age is an educational initiative that helps students learn programming, 
+      web design, and computer fundamentals through real-world projects. 
+      Our goal is to make every student a confident developer.
+    </p>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Coding Age | All Rights Reserved</p>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
