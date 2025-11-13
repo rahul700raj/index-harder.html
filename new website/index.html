@@ -1,43 +1,298 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>feature — Modern Courses</title>
+  <link rel="stylesheet" href="style.css" />
+  
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="./Coding Age1_edited_edited.avif" alt="">
-                <h2>Coding age</h2>
 
-            </div >
-            <div class="mid">
-                <a href="./index2.html"><h3>home</h3></a>
-                <h3>course</h3>
-                <h3>blog</h3>
-                <h3>info</h3>
+  <!-- NAVBAR -->
+  <header class="navwrap">
+    <div class="nav container">
+      <a class="brand" href="#home">feature<span>Learn</span></a>
 
+      <input id="nav-toggle" type="checkbox" hidden>
+      <label class="nav-burger" for="nav-toggle" aria-hidden="true">☰</label>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn ghost" href="#login">Login</a>
+        <a class="btn primary" href="#signup">Sign up</a>
+      </div>
+    </div>
+    <div class="nav-underline" aria-hidden="true"></div>
+  </header>
+
+  <!-- HERO / HOME -->
+  <main id="home">
+    <section class="hero">
+      <div class="bg-orbs" aria-hidden="true">
+        <span class="orb o1"></span>
+        <span class="orb o2"></span>
+        <span class="orb o3"></span>
+      </div>
+
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <h1>Learn fast. Build real. <span>Ship</span> smarter.</h1>
+          <p class="lead">NovaLearn provides project-based courses in Web, Design, AI, and Security — crafted by industry mentors.</p>
+          <p class="meta">Interactive lessons • Hands-on projects • Career-ready curriculum</p>
+
+          <div class="hero-ctas">
+            <a class="btn cta" href="#courses">Explore Courses</a>
+            <a class="link" href="#blog">Read Blog</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="stat">
+            <div class="num">120+</div>
+            <div class="lbl">Projects</div>
+          </div>
+          <div class="stat">
+            <div class="num">18</div>
+            <div class="lbl">Courses</div>
+          </div>
+          <div class="stat">
+            <div class="num">4.9★</div>
+            <div class="lbl">Avg Rating</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="section">
+      <div class="container">
+        <h2>From our <span>Blog</span></h2>
+        <p class="subtitle">Curated articles — design patterns, careers, AI explainers.</p>
+
+        <div class="grid cards">
+          <article class="card">
+            <h3>Design Systems in 2025</h3>
+            <p>How modular design systems speed up product teams and keep UI consistent at scale.</p>
+            <a class="card-link" href="#">Read more →</a>
+          </article>
+
+          <article class="card">
+            <h3>Practical AI for Developers</h3>
+            <p>Concrete examples of integrating lightweight ML models in apps — no PhD required.</p>
+            <a class="card-link" href="#">Read more →</a>
+          </article>
+
+          <article class="card">
+            <h3>Frontend Performance Checklist</h3>
+            <p>Simple audits that shave seconds off your load time — and keep users happy.</p>
+            <a class="card-link" href="#">Read more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES / EXPLORE -->
+    <section id="courses" class="section explore">
+      <div class="container">
+        <h2>Explore <span>Courses</span></h2>
+        <p class="subtitle">Pick a track and start building a portfolio-ready project.</p>
+
+        <div class="courses-grid">
+          <!-- Card 1 -->
+          <article class="course">
+            <div class="thumb">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/></svg>
             </div>
-            <div class="end">
-                <button>login /signup<login>
-                
-
+            <div class="content">
+              <h3>Full-Stack Web Dev</h3>
+              <p class="muted">HTML • CSS • JS • Node • Databases</p>
+              <details>
+                <summary>What you get</summary>
+                <ul>
+                  <li>12 hands-on projects</li>
+                  <li>Deploy portfolio apps</li>
+                  <li>Mentor code reviews</li>
+                </ul>
+              </details>
+              <div class="course-meta">
+                <span class="pill">12 weeks</span>
+                <span class="pill">Beginner → Pro</span>
+                <a class="btn small" href="#">Enroll</a>
+              </div>
             </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="course">
+            <div class="thumb">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="6" width="36" height="36" rx="6"/></svg>
+            </div>
+            <div class="content">
+              <h3>UI/UX & Motion Design</h3>
+              <p class="muted">Figma • Prototyping • Motion</p>
+              <details>
+                <summary>What you get</summary>
+                <ul>
+                  <li>8 guided projects</li>
+                  <li>Portfolio-ready case studies</li>
+                  <li>Mentor feedback sessions</li>
+                </ul>
+              </details>
+              <div class="course-meta">
+                <span class="pill">8 weeks</span>
+                <span class="pill">All levels</span>
+                <a class="btn small" href="#">Enroll</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="course">
+            <div class="thumb">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 30 L24 6 L42 30 Z"/></svg>
+            </div>
+            <div class="content">
+              <h3>AI & Machine Learning</h3>
+              <p class="muted">Python • Models • Projects</p>
+              <details>
+                <summary>What you get</summary>
+                <ul>
+                  <li>9 hands-on labs</li>
+                  <li>Real datasets</li>
+                  <li>Model deployment</li>
+                </ul>
+              </details>
+              <div class="course-meta">
+                <span class="pill">10 weeks</span>
+                <span class="pill">Intermediate</span>
+                <a class="btn small" href="#">Enroll</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="course">
+            <div class="thumb">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 12 H36 V36 H12 Z"/></svg>
+            </div>
+            <div class="content">
+              <h3>Cyber Security Essentials</h3>
+              <p class="muted">Networks • Defense • Ethical Hacking</p>
+              <details>
+                <summary>What you get</summary>
+                <ul>
+                  <li>5 labs & capture-the-flag</li>
+                  <li>Security toolkits</li>
+                  <li>Interview prep</li>
+                </ul>
+              </details>
+              <div class="course-meta">
+                <span class="pill">6 weeks</span>
+                <span class="pill">Beginner → Intermediate</span>
+                <a class="btn small" href="#">Enroll</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h4>How do I enroll?</h4>
+            <p>Select a course, click "Enroll", and follow the signup flow.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Do I get a certificate?</h4>
+            <p>Yes — certificates are awarded after course completion and project review.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Are there deadlines?</h4>
+            <p>Most courses are self-paced; some cohort projects have fixed deadlines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="muted">Questions? Reach out — we reply within 48 hours.</p>
+        <div class="contact-grid">
+          <div>
+            <strong>Email</strong>
+            <p>codingage@123gmail.com</p>
+          </div>
+          <div>
+            <strong>Phone</strong>
+            <p>+91 700*****97</p>
+          </div>
+          <div>
+            <strong>Location</strong>
+            <p>bihar,patna, India</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="yr">2025</span> feature-Learn</div>
+        <nav class="foot-nav">
+          <a href="#home">Home</a>
+          <a href="#courses">Courses</a>
+          <a href="#contact">Contact</a>
         </nav>
-    </header>
-<main>
-    <div class="left"></div>
-    <h1>welome to coding age</h1>
-    <p>
-        
-    </p>
+      </div>
+    </footer>
+  </main>
 
-</main>
-<div class="right"></div>
+  <!-- LOGIN (CSS-only modal using :target) -->
+  <div id="login" class="modal">
+    <div class="modal-panel">
+      <a class="modal-close" href="#home" aria-label="Close">✕</a>
+      <h3>Login</h3>
+      <form class="auth-form" action="#" method="post" onsubmit="return false;">
+        <label><input type="email" required placeholder="Email"></label>
+        <label><input type="password" required placeholder="Password"></label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Login</button>
+          <a class="link" href="#signup">Create account</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- SIGNUP (CSS-only modal using :target) -->
+  <div id="signup" class="modal">
+    <div class="modal-panel">
+      <a class="modal-close" href="#home" aria-label="Close">✕</a>
+      <h3>Create account</h3>
+      <form class="auth-form" action="#" method="post" onsubmit="return false;">
+        <label><input type="text" required placeholder="Full name"></label>
+        <label><input type="email" required placeholder="Email"></label>
+        <label><input type="password" required placeholder="Password"></label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Sign up</button>
+          <a class="link" href="#login">Already have an account?</a>
+        </div>
+      </form>
+    </div>
+  </div>
 
 </body>
 </html>
