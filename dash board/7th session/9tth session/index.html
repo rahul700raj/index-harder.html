@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FoodHub — Glassmorphism Theme</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">
+        <a href="#home" class="logo">Food<span>Hub</span></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#special">Specials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#signup">Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-card glass">
+        <h1>Delicious food — delivered hot.</h1>
+        <p>Fresh ingredients · Fast delivery · Tasty moments</p>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="container section">
+      <h2 class="section-title">Our Menu</h2>
+      <div class="grid">
+        <article class="card glass">
+          <div class="card-media">🍔</div>
+          <h3>Burger Deluxe</h3>
+          <p class="price">₹120</p>
+        </article>
+
+        <article class="card glass">
+          <div class="card-media">🍕</div>
+          <h3>Cheese Pizza</h3>
+          <p class="price">₹250</p>
+        </article>
+
+        <article class="card glass">
+          <div class="card-media">🍜</div>
+          <h3>Spicy Noodles</h3>
+          <p class="price">₹180</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SPECIAL -->
+    <section id="special" class="container section">
+      <h2 class="section-title">Today's Special</h2>
+      <div class="special glass highlight">
+        <div class="special-media">🔥</div>
+        <div class="special-body">
+          <h3>Spicy Chicken Platter</h3>
+          <p>Chef's special — crispy, spicy & juicy</p>
+          <span class="price">₹350</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container section">
+      <h2 class="section-title">Contact</h2>
+      <p>rm2778643@gmail.com · +917004398297</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 Food Hub — All Rights Reserved</p>
+  </footer>
+
+  <!-- LOGIN MODAL -->
+  <div id="login" class="modal">
+    <div class="modal-panel glass">
+      <a class="close" href="#home">✕</a>
+      <h3>Login</h3>
+      <form id="loginForm">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="btn-submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- SIGNUP MODAL -->
+  <div id="signup" class="modal">
+    <div class="modal-panel glass">
+      <a class="close" href="#home">✕</a>
+      <h3>Signup</h3>
+      <form id="signupForm">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="btn-submit">Signup</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ORDER MODAL -->
+  <div id="order" class="modal">
+    <div class="modal-panel glass">
+      <a class="close" href="#home">✕</a>
+      <h3>Place Order</h3>
+      <form id="orderForm">
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Phone" required>
+        <select required>
+          <option value="">Choose item…</option>
+          <option>Burger — ₹120</option>
+          <option>Pizza — ₹250</option>
+          <option>Noodles — ₹180</option>
+        </select>
+        <textarea placeholder="Delivery Address" required></textarea>
+        <button class="btn-submit">Submit Order</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- SUCCESS POPUP -->
+  <div id="successMsg" class="success-popup">✔ Successfully Submitted!</div>
+
+  <script src="first.js"></script>
+</body>
+</html>

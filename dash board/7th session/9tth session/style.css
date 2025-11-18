@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #111;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.glass {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.hero {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  text-align: center;
+}
+
+.special {
+  display: flex;
+  gap: 15px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  place-items: center;
+  background: #000a;
+}
+
+.modal:target {
+  display: grid;
+}
+
+.modal-panel {
+  width: 320px;
+  padding: 25px;
+  border-radius: 16px;
+}
+
+.modal-panel input,
+.modal-panel select,
+.modal-panel textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.btn-submit {
+  width: 100%;
+  background: #ffcc00;
+  padding: 12px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.close {
+  float: right;
+  text-decoration: none;
+  color: white;
+}
+
+/* Success Popup */
+.success-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  background: #00ff66;
+  color: black;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: none;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.success-popup.show {
+  display: block;
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+

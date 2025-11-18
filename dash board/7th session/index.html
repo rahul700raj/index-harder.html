@@ -1,20 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduDashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>7th session</h1>
-    <div>
-        
-    </div>
-    <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus atque rerum at placeat libero, velit optio officia obcaecati qui! Et in, aut aliquid excepturi omnis sed nesciunt suscipit vitae asperiores delectus pariatur quis voluptatibus repellendus, porro, autem vel ab tempora ea. Nulla vel qui officia quasi ab illo aperiam vero libero et earum. Nam, eligendi voluptates deleniti provident maxime error veritatis possimus assumenda exercitationem inventore dolorum ex ab repellat nesciunt quaerat distinctio quas non et ipsum ipsam sapiente sunt similique cum? Quia fugit maiores nemo impedit quasi laudantium fugiat dolore corporis, aspernatur sapiente tenetur quo rerum natus. Quisquam, corrupti illum.
 
-    </p>
-    
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <div class="logo">EduDashboard 🏫</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#faq">FAQ ❓</a></li>
+        <li><a href="#events">Events 📅</a></li>
+        <li><a href="#courses">Courses 📘</a></li>
+        <li><a href="#batches">Batches 📆</a></li>
+        <li><a href="#admission">Admission 📝</a></li>
+        <li><a href="#about">About 🧑‍🏫</a></li>
+        <li><a href="#contact">Contact 📞</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <button id="loginBtn">Login</button>
+      <button id="signupBtn">Sign Up</button>
+    </div>
+  </header>
+
+  <!-- ===== HOME ===== -->
+  <section id="home">
+    <h2>Welcome to EduDashboard</h2>
+    <p>Learn, grow and succeed with our interactive and affordable online courses.</p>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq">
+    <h2>FAQ ❓</h2>
+    <div class="card">
+      <h3>How do I enroll?</h3>
+      <p>Go to the Admission section, fill out the form, and start learning right away.</p>
+    </div>
+    <div class="card">
+      <h3>Can I learn anytime?</h3>
+      <p>Yes! Our courses are fully flexible and accessible 24/7.</p>
+    </div>
+  </section>
+
+  <!-- ===== EVENTS ===== -->
+  <section id="events">
+    <h2>Upcoming Events 📅</h2>
+    <div class="card"><h3>Web Dev Workshop</h3><p>Join our free 2-day HTML, CSS & JS bootcamp.</p></div>
+    <div class="card"><h3>AI Innovation Week</h3><p>Hands-on sessions with data experts and mentors.</p></div>
+  </section>
+
+  <!-- ===== COURSES ===== -->
+  <section id="courses">
+    <h2>Popular Courses 📘</h2>
+    <div class="grid">
+      <div class="card"><h3>Full Stack Dev</h3><p>HTML, CSS, JS, Node, React.</p></div>
+      <div class="card"><h3>Data Science</h3><p>Python, Pandas, Machine Learning.</p></div>
+      <div class="card"><h3>Digital Marketing</h3><p>SEO, Ads, Social Media Marketing.</p></div>
+    </div>
+  </section>
+
+  <!-- ===== BATCHES ===== -->
+  <section id="batches">
+    <h2>Batches 📆</h2>
+    <div class="grid">
+      <div class="card"><h3>Morning</h3><p>8 AM - 12 PM</p></div>
+      <div class="card"><h3>Evening</h3><p>5 PM - 9 PM</p></div>
+      <div class="card"><h3>Weekend</h3><p>Sat-Sun 10 AM - 4 PM</p></div>
+    </div>
+  </section>
+
+  <!-- ===== ADMISSION ===== -->
+  <section id="admission">
+    <h2>Admission 📝</h2>
+    <p>Fill out our admission form and get started with your learning journey.</p>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <h2>About 🧑‍🏫</h2>
+    <p>EduDashboard is a modern platform for online education, providing affordable and effective courses to learners worldwide.</p>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <h2>Contact 📞</h2>
+    <p>📧 Email: support@edudashboard.com</p>
+    <p>📱 Phone: +91 9876543210</p>
+  </section>
+
+  <footer>© 2025 EduDashboard | All Rights Reserved</footer>
+
+  <!-- ===== LOGIN MODAL ===== -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeLogin">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== SIGNUP MODAL ===== -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeSignup">&times;</span>
+      <h2>Sign Up</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const loginModal = document.getElementById("loginModal");
+    const signupModal = document.getElementById("signupModal");
+    const loginBtn = document.getElementById("loginBtn");
+    const signupBtn = document.getElementById("signupBtn");
+    const closeLogin = document.getElementById("closeLogin");
+    const closeSignup = document.getElementById("closeSignup");
+
+    loginBtn.onclick = () => loginModal.style.display = "flex";
+    signupBtn.onclick = () => signupModal.style.display = "flex";
+    closeLogin.onclick = () => loginModal.style.display = "none";
+    closeSignup.onclick = () => signupModal.style.display = "none";
+    window.onclick = (e) => {
+      if (e.target === loginModal) loginModal.style.display = "none";
+      if (e.target === signupModal) signupModal.style.display = "none";
+    };
+  </script>
 </body>
 </html>

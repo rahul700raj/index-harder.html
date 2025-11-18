@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> <food-hub></food-hub> — Glassmorphism Theme (Demo)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="first.js"></script>
+
+  <!-- decorative floating icons (pure CSS positioned) -->
+  <div class="float-icons" aria-hidden="true">
+    <div class="icon i1">🍕</div>
+    <div class="icon i2">🍔</div>
+    <div class="icon i3">🍜</div>
+    <div class="icon i4">🥤</div>
+    <div class="icon i5">🥗</div>
+  </div>
+
+  <!-- NAVBAR (glassmorphism) -->
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">
+        <a href="#home" class="logo">Food<span>Hub</span></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#special">Specials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#order" class="neon-btn">Order</a></li>
+        <li><a href="#login" class="glass-pill">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-card glass">
+        <h1>Delicious food — delivered hot.</h1>
+        <p>Fresh ingredients · Fast delivery · Tasty moments</p>
+        <a href="#order" class="cta neon-order">Order Now</a>
+      </div>
+    </section>
+
+    <!-- MENU (glass cards) -->
+    <section id="menu" class="container section">
+      <h2 class="section-title">Our Menu</h2>
+      <div class="grid">
+        <article class="card glass">
+          <div class="card-media">🍔</div>
+          <h3>Burger Deluxe</h3>
+          <p class="price">₹120</p>
+          <a href="#order" class="small-btn">Order</a>
+        </article>
+
+        <article class="card glass">
+          <div class="card-media">🍕</div>
+          <h3>Cheese Pizza</h3>
+          <p class="price">₹250</p>
+          <a href="#order" class="small-btn">Order</a>
+        </article>
+
+        <article class="card glass">
+          <div class="card-media">🍜</div>
+          <h3>Spicy Noodles</h3>
+          <p class="price">₹180</p>
+          <a href="#order" class="small-btn">Order</a>
+        </article>
+
+        <article class="card glass">
+          <div class="card-media">🥗</div>
+          <h3>Green Salad</h3>
+          <p class="price">₹140</p>
+          <a href="#order" class="small-btn">Order</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SPECIAL -->
+    <section id="special" class="container section">
+      <h2 class="section-title">Today's Special</h2>
+      <div class="special glass highlight">
+        <div class="special-media">🔥</div>
+        <div class="special-body">
+          <h3>Spicy Chicken Platter</h3>
+          <p>Chef's special — crispy, spicy & juicy</p>
+          <span class="price">₹350</span>
+          <a href="#order" class="small-btn">Order</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container section">
+      <h2 class="section-title">Contact</h2>
+      <p>rm2778643@gmail.com · +917004398297</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 Food Hub — All Rights Reserved</p>
+  </footer>
+
+  <!-- CSS-ONLY LOGIN POPUP (using :target) -->
+  <div id="login" class="modal">
+    <div class="modal-panel glass">
+      <a class="close" href="#home" aria-label="close">✕</a>
+      <h3>Login</h3>
+      <form class="modal-form" action="#" method="post" onsubmit="return false;">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="btn-submit neon-btn">Login</button>
+      </form>
+      <p class="muted">Demo only — no backend (CSS-only)</p>
+    </div>
+  </div>
+
+  <!-- CSS-ONLY ORDER POPUP -->
+  <div id="order" class="modal">
+    <div class="modal-panel glass">
+      <a class="close" href="#home" aria-label="close">✕</a>
+      <h3>Place Order</h3>
+      <form class="modal-form" action="#" method="post" onsubmit="return false;">
+        <input type="text" placeholder="Full name" required>
+        <input type="tel" placeholder="Phone" required>
+        <select required>
+          <option value="">Choose item…</option>
+          <option>Burger — ₹120</option>
+          <option>Pizza — ₹250</option>
+          <option>Noodles — ₹180</option>
+          <option>Biryani — ₹220</option>
+        
+        </select>
+        <textarea placeholder="Delivery address" rows="3" required></textarea>
+        <button class="btn-submit neon-btn">Submit Order</button>
+      </form>
+      <p class="muted">This is a front-end mock — connect to backend to persist orders.</p>
+    </div>
+  </div>
+
+</body>
+</html>
