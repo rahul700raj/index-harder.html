@@ -1,51 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coding Age - Home</title>
+  <title>FoodHub — Glass + Animation</title>
   <link rel="stylesheet" href="style.css">
-  
 </head>
+
 <body>
-  <header>
-    <div class="logo">Coding Age</div>
-    <img src="./Coding Age1_edited_edited.avif" alt="">
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="course.html">Courses</a>
-      <a href="batch.html">Batches</a>
-      <a href="admission.html">Admission</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="faq.html">FAQ</a>
-      <a href="login.html" class="btn">Login</a>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="logo">Food<span>Hub</span></a>
+
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#order" class="neon-btn">Order</a></li>
+        <li><a href="#login" class="glass-pill">Login</a></li>
+        <li><a href="#signup" class="glass-pill">Signup</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <video autoplay muted loop id="bg-video">
-      <source src="assets/video/hero.mp4" type="video/mp4">
-    </video>
-    <div class="hero-content">
-      <h1>Welcome to Coding Age</h1>
-      <p>Learn web development, programming, and design — build your career in tech!</p>
-      <a href="courses.html" class="btn-primary">Explore Courses</a>
+  <!-- HERO -->
+  <section id="home" class="hero container fade-in">
+    <div class="hero-card glass float-up">
+      <h1>Delicious Food — Delivered Hot 🔥</h1>
+      <p>Fast Delivery • Fresh Taste • Premium Quality</p>
+      <a href="#order" class="cta neon-order">Order Now</a>
     </div>
   </section>
 
-  <section class="about">
-    <h2>Our Project & Mission</h2>
-    <p>
-      Coding Age is an educational initiative that helps students learn programming, 
-      web design, and computer fundamentals through real-world projects. 
-      Our goal is to make every student a confident developer.
-    </p>
+  <!-- MENU -->
+  <section id="menu" class="container section fade-in">
+    <h2 class="section-title">Our Menu</h2>
+
+    <div class="grid">
+
+      <!-- Old Items -->
+      <article class="card glass pop">
+        <div class="card-media">🍔</div>
+        <h3>Burger Deluxe</h3>
+        <p class="price">₹120</p>
+        <a href="#order" class="small-btn">Order</a>
+      </article>
+
+      <article class="card glass pop">
+        <div class="card-media">🍕</div>
+        <h3>Cheese Pizza</h3>
+        <p class="price">₹250</p>
+        <a href="#order" class="small-btn">Order</a>
+      </article>
+
+      <article class="card glass pop">
+        <div class="card-media">🍜</div>
+        <h3>Spicy Noodles</h3>
+        <p class="price">₹180</p>
+        <a href="#order" class="small-btn">Order</a>
+      </article>
+
+      <!-- New Items -->
+      <article class="card glass pop">
+        <div class="card-media">🍛</div>
+        <h3>Chicken Biryani</h3>
+        <p class="price">₹220</p>
+        <a href="#order" class="small-btn">Order</a>
+      </article>
+
+      <article class="card glass pop">
+        <div class="card-media">🥟</div>
+        <h3>Veg Momos</h3>
+        <p class="price">₹120</p>
+        <a href="#order" class="small-btn">Order</a>
+      </article>
+
+      <article class="card glass pop">
+        <div class="card-media">🍝</div>
+        <h3>Pasta Alfredo</h3>
+        <p class="price">₹180</p>
+        <a href="#order" class="small-btn">Order</a>
+      </article>
+
+      <article class="card glass pop">
+        <div class="card-media">🍟</div>
+        <h3>French Fries</h3>
+        <p class="price">₹80</p>
+        <a href="#order" class="small-btn">Order</a>
+      </article>
+
+      <article class="card glass pop">
+        <div class="card-media">🥤</div>
+        <h3>Cold Coffee</h3>
+        <p class="price">₹110</p>
+        <a href="#order" class="small-btn">Order</a>
+      </article>
+
+    </div>
   </section>
 
-  <footer>
-    <p>© <span id="year"></span> Coding Age | All Rights Reserved</p>
+  <!-- OFFERS -->
+  <section id="offers" class="container section fade-in">
+    <h2 class="section-title">🔥 Today's Offers</h2>
+
+    <div class="offers">
+
+      <div class="offer-card glass slide-left">
+        <h3>🍕 Buy 1 Pizza, Get 30% Off!</h3>
+        <p>2nd pizza पर सीधा 30% discount</p>
+      </div>
+
+      <div class="offer-card glass slide-right">
+        <h3>🍔 Burger + Fries Combo — ₹150</h3>
+        <p>₹40 की बचत</p>
+      </div>
+
+      <div class="offer-card glass slide-left">
+        <h3>📦 Free Delivery</h3>
+        <p>पहले ऑर्डर पर delivery बिल्कुल free</p>
+      </div>
+
+      <div class="offer-card glass slide-right">
+        <h3>💥 20% Off Over ₹500</h3>
+        <p>Limited time only</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container section fade-in">
+    <h2 class="section-title">Contact Us</h2>
+    <p>rm2778643@gmail.com · +91 7004 398 297</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 FoodHub — All Rights Reserved</p>
   </footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-</body>
-</html>
+
+  <!-- POPUPS (LOGIN / SIGNUP / ORDER) -->
+  <div id="login" class="modal">
+    <div class="modal-panel glass">
+      <a class="close" href="#home">✕</a>
+      <h3>Login</h3>
+      <form onsubmit="loginUser(event)">
+        <input type="email" required placeholder="Email">
+        <input type="password" required placeholder="Password">
+        <button class="btn-submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="signup" class="modal">
+    <div class="modal-panel glass">
+      <a class="close" hr
